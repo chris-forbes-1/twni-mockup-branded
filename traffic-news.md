@@ -7,4 +7,8 @@ permalink: traffic-news
 
 # Traffic News
 
+{% include traffic-news-links-inc.html %}
+
+<hr/>
+
 {% include traffic-news-inc.html %}

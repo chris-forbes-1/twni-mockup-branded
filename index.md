@@ -18,5 +18,6 @@ title: Home | Traffic Watch Northern Ireland | nidirect
 
 ## Latest Traffic Information
 
-{% include traffic-news-inc.html %}
+{% include traffic-news-links-inc.html %}
 
+<br/>
