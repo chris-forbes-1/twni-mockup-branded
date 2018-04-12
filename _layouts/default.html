@@ -74,7 +74,7 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><abbr title="User Experience Model"></abbr><a href="index.html">Traffic Watch Home</a></li>
+                    <li><abbr title="Traffic Watch NI"></abbr><a href="index.html">Traffic Watch Home</a></li>
                     <li><a href="traffic-news">Traffic News</a></li>
                     <li><a href="cameras">Cameras</a></li>
                     <li><a href="emergency-news">Emergency News</a></li>
@@ -181,6 +181,16 @@
         $(document).ready(function () {
             $(".dropdown-toggle").dropdown();
             $('body').removeClass('no-js');
+            
+            var current = location.pathname.substr(1);
+            $('.nav li a').each(function(){
+                var $this = $(this);
+                // if the current path is like this link, make it active
+                //alert($this.attr('href'));
+                if($this.attr('href').indexOf(current) !== -1){
+                    $this.parent().addClass('active');
+                }
+            })
         });
     </script>
 
