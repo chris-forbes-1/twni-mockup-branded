@@ -182,12 +182,12 @@
             $(".dropdown-toggle").dropdown();
             $('body').removeClass('no-js');
             
-            var current = location.pathname.substr(1);
+            var current = location.pathname;
             $('.nav li a').each(function(){
                 var $this = $(this);
                 // if the current path is like this link, make it active
                 //alert($this.attr('href'));
-                if($this.attr('href').indexOf(current) !== -1){
+                if(current.indexOf($this.attr('href')) !== -1){
                     $this.parent().addClass('active');
                 }
             })
