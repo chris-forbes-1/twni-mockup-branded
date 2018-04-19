@@ -17,16 +17,17 @@ title: Home | Traffic Watch Northern Ireland | nidirect
 </p>
 
 
-<div class="container-fluid">
+<div class="container-fluid traffic-news">
 <div class="row">
     <div class="col-md-4">
         <h2>Latest Traffic Information</h2>
 {% include traffic-news-links-inc.html %}
     </div>
-    <div class="col-md-8 hidden-sm">
+    <div class="col-md-8 hidden-sm" style="background-color: white">
         <h2>Travel Information Map</h2>
 {% include map.html %}
     </div>
+</div>
 </div>
 
 <br/>
