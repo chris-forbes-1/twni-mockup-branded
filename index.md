@@ -16,8 +16,17 @@ title: Home | Traffic Watch Northern Ireland | nidirect
     The information on this website is provided by Transport NI of the Department for Infrastructure in Northern Ireland. Transport NI is the sole roads authority for all public roads in Northern Ireland. <br />
 </p>
 
-## Latest Traffic Information
 
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-4">
+        <h2>Latest Traffic Information</h2>
 {% include traffic-news-links-inc.html %}
+    </div>
+    <div class="col-md-8 hidden-sm">
+        <h2>Travel Information Map</h2>
+{% include map.html %}
+    </div>
+</div>
 
 <br/>

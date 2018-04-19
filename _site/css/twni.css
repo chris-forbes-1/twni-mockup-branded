@@ -1,0 +1,13 @@
+.cctvImage {
+    width:100%
+}
+
+.icon-warn-triangle {
+    color: red
+}
+
+@media (min-width: 768px) {
+    #marketing_override p {
+        font-size: 20px;
+    }
+}
