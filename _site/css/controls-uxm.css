@@ -245,7 +245,39 @@ ul.tabs {
             margin-bottom: 0;
         }
 
+.tab-content {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: #ededed;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #ededed;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-right-color: #ededed;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-top-color: #ededed;
+    border-top-style: solid;
+    border-top-width: 2px;
+    display: none;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin-bottom: 18px;
+}
 
+    .tab-content.current {
+        display: inherit;
+    }
 
 .validation {
     border-left-color: #c71c22;
