@@ -53,7 +53,7 @@ title: Home | Traffic Watch Northern Ireland | nidirect
             </div>
           </div>
         </div>
-        <div class="col-md-8 hidden-sm" style="background-color: white">
+        <div class="col-md-8 d-none d-md-block" style="background-color: white">
         <!-- <h2>Travel Information Map</h2> -->
 {% include map.html %}
         </div>

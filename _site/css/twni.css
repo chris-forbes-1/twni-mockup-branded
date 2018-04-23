@@ -1,5 +1,5 @@
 body {
-  background: url('../images/background2.jpg') no-repeat center center fixed;
+  background: url('../images/background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -192,3 +192,4 @@ span.elink {
     position: absolute !important;
     width: 1px;
 }
+
