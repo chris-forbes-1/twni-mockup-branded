@@ -14,16 +14,20 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="favicon.ico" />
 
+    <!--Develop-->
+    <link rel="stylesheet" href="/assets/main.css">
+    
     <link href="css/twni.css" rel="stylesheet" />
     
-    <!--Develop-->
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/UX-theme.css" rel="stylesheet" />
     <link href="css/jquery-ui.css" rel="stylesheet" />
     <link href="css/bootstrap-uxm.css" rel="stylesheet" />
     <link href="css/bootstrap-uxm-responsive.css" rel="stylesheet" />
+    -->
+    <!--
     <link href="css/controls-uxm.css" rel="stylesheet" />
-
+    -->
     <!--Live-->
     <!--
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -33,7 +37,8 @@
     <link href="css/bootstrap-uxm-responsive.min.css" rel="stylesheet" />
     <link href="css/controls-uxm.min.css" rel="stylesheet" />
     -->
-
+    
+   
     <script type="text/javascript">
         // <![CDATA[
         (function (i, s, o, g, r, a, m) {
@@ -51,61 +56,52 @@
     
     <script defer src="js/fontawesome-all.js"></script>
     
-    <script src="http://trafficwatchni.com/twni-classic-theme/js/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <!-- <script src="http://trafficwatchni.com/twni-classic-theme/js/jquery/jquery-1.7.1.min.js" type="text/javascript"></script> -->
     
 </head>
 
 <body>
-    
-    <div class="skip-link">
-        <a class="element-invisible element-focusable" href="#main-content">Skip to content</a>
-    </div>
-
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-            <a class="navbar-brand pull-right" href="https://www.infrastructure-ni.gov.uk/">
-                <img src="images/dfi-bilogo-1x.png">
-            </a>
-            <div class="navbar-header">
-                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
-                <a class="navbar-brand" href="index.html">
-                    <img alt="Traffic Watch Northern Ireland" src="images/header.png">
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <span class="logo"><span class="primary-colour">traffic</span><span class="font-dark">watch</span></span>
+            <br>
+            <span class="font-light">NORTHERN IRELAND</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="traffic-news">Traffic News</a></li>
+            <li class="nav-item"><a class="nav-link" href="cameras">Cameras</a></li>
+            <li class="nav-item"><a class="nav-link" href="emergency-news">Emergency News</a></li>
+            <li class="nav-item"><a class="nav-link" href="roadworks-report">Roadworks</a></li>
+            <li class="nav-item"><a class="nav-link" href="strangford-lough-ferry">Strangford Lough Ferry</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel-information-map">Travel Information Map</a></li>
+            <li class="nav-item"><a class="nav-link" href="journey-times">Journey Times</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
                 </a>
-                
-            </div>
-            <div class="navbar-collapse collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="traffic-news">Traffic News</a></li>
-                    <li><a href="cameras">Cameras</a></li>
-                    <li><a href="emergency-news">Emergency News</a></li>
-                    <li><a href="roadworks-report">Roadworks</a></li>
-                    <li><a href="strangford-lough-ferry">Strangford Lough Ferry</a></li>
-                    <li><a href="travel-information-map">Travel Information Map</a></li>
-                    <li><a href="journey-times">Journey Times</a></li>
-                    <li class="dropdown">
-                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">About <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about-trafficwatch">About Traffic Watch NI</a></li>
-                            <li><a href="traffic-info-and-control-centre">Traffic Information and Control Centre</a></li>
-                            <li><a href="intelligent-transport-systems-its">Intelligent 
-                            Transport Systems (ITS)</a></li>
-                            <li><a href="managing-the-network">Managing the Network</a></li>
-                            <li><a href="traffic-and-travel-information">Traffic and Travel Information</a></li>
-                            <li><a href="liaison-with-others">Liaison with Others</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="about-trafficwatch">About Traffic Watch NI</a>
+                    <a class="dropdown-item" href="traffic-info-and-control-centre">Traffic Information and Control Centre</a>
+                    <a class="dropdown-item" href="intelligent-transport-systems-its">Intelligent 
+                    Transport Systems (ITS)</a>
+                    <a class="dropdown-item" href="managing-the-network">Managing the Network</a>
+                    <a class="dropdown-item" href="traffic-and-travel-information">Traffic and Travel Information</a>
+                    <a class="dropdown-item" href="liaison-with-others">Liaison with Others</a>
+                </div>
+            </li>        
+        </ul>
+        <a class="pull-right dfi-logo" href="https://www.infrastructure-ni.gov.uk/">
+            <img src="images/dfi-bilogo-1x.png">
+        </a>
+      </div>
     </nav>
 
-    <div class="jumbotron service-name-uxm">
+    <div class="jumbotron jumbotron-fluid service-name-uxm">
         <div class="container-fluid">
             <div class="row">
                 <div class=col-md-8>Traffic Watch Northern Ireland</div>
@@ -202,25 +198,29 @@
         </div>
     </footer>
 
-    <!--Develop-->
-    <!--<script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/jquery-ui.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script src="js/controls-uxm.js" type="text/javascript"></script>-->
-
+    <!--
+    <script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+    <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"</script>
+    -->
+    
     <!--Live-->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+     <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
     <script src="js/controls-uxm.min.js" type="text/javascript"></script>
+    
 
     <script>
         $(document).ready(function () {
-            $(".dropdown-toggle").dropdown();
+
             $('body').removeClass('no-js');
             
             var current = location.pathname;
-            $('.nav li a').each(function(){
+            $('.navbar-nav li a').each(function(){
                 var $this = $(this);
                 // if the current path is like this link, make it active
                 //alert($this.attr('href'));
@@ -228,12 +228,19 @@
                     $this.parent().addClass('active');
                 }
             })
+            
+            /*
+            $('nav-tabs > a').on('click', function (e) {
+                e.preventDefault()
+                alert('clickeroo');
+                $(this).tab('show')
+            })
+            */
         });
     </script>
 
     <!-- scroll to top plugin used to improve readability of UXM content only -->
     <!-- this plugin has been disabled for touch devices -->
-    <!-- this plugin should be removed for a transctional service -->
     <script type="text/javascript" src="js/scrolltopcontrol.js">
         /*
         Scroll To Top Control script- &#169; Dynamic Drive DHTML code library (www.dynamicdrive.com)
