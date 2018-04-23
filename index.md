@@ -6,7 +6,6 @@ layout: default
 title: Home | Traffic Watch Northern Ireland | nidirect
 ---
 
-<br>
 
 <!--
 <h1 id="main-content">
@@ -34,20 +33,25 @@ title: Home | Traffic Watch Northern Ireland | nidirect
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
+                <!-- LATEST -->
                 <div class="tab-pane fade active show" id="news-latest" role="tabpanel" aria-labelledby="news-latest-tab">
                     <p>
                         Latest News
                       {% include traffic-news-links-inc.html %}
                     </p>
                 </div>
+                <!-- GENERAL -->
                 <div class="tab-pane fade" id="news-general" role="tabpanel" aria-labelledby="news-general-tab">
                           <p> General News
-                      {% include traffic-news-links-inc.html %}
                     </p>
                 </div>
+                <!-- EMERGENCY -->
                 <div class="tab-pane fade" id="news-emergency" role="tabpanel" aria-labelledby="news-emergency-tab">
-                          <p> Winter and Emergency News
-                      {% include traffic-news-links-inc.html %}
+                    <p> Winter and Emergency News </p>
+                    <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> General Traffic News <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
+
+                    <h4><a href="traffic-news#newsItem_2"><i class="fas fa-snowflake icon-winter"></i> Some winter news <small class="text-muted">29/03/2018 13:59:33</small></a></h4>
+
                     </p>
                 </div>
             </div>

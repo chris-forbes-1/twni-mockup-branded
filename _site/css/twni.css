@@ -1,9 +1,13 @@
 body {
-  background: url('../images/background.jpg') no-repeat center center fixed;
+  background: url('../images/background3.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+#main-content {
+    background-color: white
 }
 
 .dfi-logo {
@@ -14,9 +18,6 @@ body {
     width:100%
 }
 
-.icon-warn-triangle {
-    color: red
-}
 
 @media (min-width: 768px) {
     #marketing_override p {
