@@ -12,3 +12,4 @@ permalink: travel-information-map
 <p> Visit our&nbsp;<a href="journey-times">Journey Times&nbsp;</a>page to view current journey times on M1, M2 Westlink and A1.&nbsp;</p> 
     
 {% include map.html %}
+{% include map-key.html %}

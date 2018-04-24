@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 title: Home | Traffic Watch Northern Ireland | nidirect
-permalink: index
+permalink: index2
 ---
 
 
@@ -36,17 +36,12 @@ permalink: index
             <div class="tab-content" id="newsTabContent">
                 <!-- LATEST -->
                 <div class="tab-pane fade active show" id="news-latest" role="tabpanel" aria-labelledby="news-latest-tab">
-                    <p> &nbsp;
+                    <p>
+                        Latest News
+                        <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> General Traffic News <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
+
                         <h4><a href="index2"><img src="images/map/incident-high.png"> Major Incident - M1 Closed Junction 10 <small class="text-muted">29/03/2018 13:59:33</small></a></h4>
-                        
-                        <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Traffic News Summary <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
-                        <p>
-                        In Greater Belfast traffic is busy on the following routes:-
-                        </p>
-                        <p>
-                        M1 countrybound J2 - J3
-                        leaving the M2 at J1A Nelson Street A12 Westlink towards York Street A2 Sydenham By Pass towards Dee Street (Bangor bound) Boucher Road towards Broadway Dunbar Link towards York Street Co Antrim - Newtownabbey / Carrickfergus - the main A2 Shore Road has a lane restriction in place in both directions at the Station Road Greenisland - while engineers undertake repairs to a gas pipeline.
-                        </p>
+
                     </p>
                 </div>
                 <!-- GENERAL -->
@@ -57,40 +52,19 @@ permalink: index
                 </div>
                 <!-- EMERGENCY -->
                 <div class="tab-pane fade" id="news-emergency" role="tabpanel" aria-labelledby="news-emergency-tab">
-                
                     <p> Winter and Emergency News </p>
-                    <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Emergency Traffic News <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
-                    <p>
-                    Nothing to report
-                    </p>
-                    
-                    <hr>
-                    
-                    <h4><a href="traffic-news#newsItem_2"><i class="fas fa-snowflake icon-winter"></i> Some winter news <small class="text-muted">29/03/2018 13:59:33</small></a></h4>
-                    <p>
-                    East Belfast: Montrose Street, off the Albertbridge Road remains closed after the collpase of a derelict building. 
-                    </p><p>
-                    The items below refer to locations that are still affected by the August 2017 flooding event.
-                    </p><p>
-                    Co Londonderry Roads Closed
-                    </p><p>
-                    B49 Church Street Claudy – Collapsed bridge
-                    U1180 Glenrandal Rd, Park – Collapsed bridge
-                    Co Tyrone Roads Closed
-                    </p><p>
-                    C624 Camlough Road, Creggan
-                    U1232 McConnell’s Branch Road off Gorticashel Rd, Glehull,Omagh
-                    In the event of flooding, if anyone is in need of rescue dial 999 otherwise telephone the Flooding Incident Line on 0300 2000 100. The Flooding Incident Line provides a single point of contact to report when property is flooded or flooding.
-                    </p>
+                    <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> General Traffic News <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
 
+                    <h4><a href="traffic-news#newsItem_2"><i class="fas fa-snowflake icon-winter"></i> Some winter news <small class="text-muted">29/03/2018 13:59:33</small></a></h4>
+
+                    </p>
                 </div>
             </div>
           </div>
         </div>
         <div class="col-md-8 d-none d-md-block" style="background-color: white">
         <!-- <h2>Travel Information Map</h2> -->
-
-{% include map.html %}
+{% include map-zoomed.html %}
 {% include map-key.html %}
         </div>
     </div>
