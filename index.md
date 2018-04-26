@@ -33,12 +33,30 @@ permalink: index
                   <a class="nav-link" id="news-emergency-tab" data-toggle="tab" href="#news-emergency" role="tab" aria-controls="news-emergency" aria-selected="false">Emergency</a>
                 </li>
             </ul>
-            <div class="tab-content" id="newsTabContent">
+            <div class="tab-content" id="newsTabContent" style="min-height: 63vh; max-height:63vh; overflow-y:scroll;">
                 <!-- LATEST -->
                 <div class="tab-pane fade active show" id="news-latest" role="tabpanel" aria-labelledby="news-latest-tab">
                     <p> &nbsp;
                         <h4><a href="index2"><img src="images/map/incident-high.png"> Major Incident - M1 Closed Junction 10 <small class="text-muted">29/03/2018 13:59:33</small></a></h4>
-                        
+                        <hr>                        
+                        <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Traffic News Summary <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
+                        <p>
+                        In Greater Belfast traffic is busy on the following routes:-
+                        </p>
+                        <p>
+                        M1 countrybound J2 - J3
+                        leaving the M2 at J1A Nelson Street A12 Westlink towards York Street A2 Sydenham By Pass towards Dee Street (Bangor bound) Boucher Road towards Broadway Dunbar Link towards York Street Co Antrim - Newtownabbey / Carrickfergus - the main A2 Shore Road has a lane restriction in place in both directions at the Station Road Greenisland - while engineers undertake repairs to a gas pipeline.
+                        </p>
+                        <hr>
+                        <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Traffic News Summary <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
+                        <p>
+                        In Greater Belfast traffic is busy on the following routes:-
+                        </p>
+                        <p>
+                        M1 countrybound J2 - J3
+                        leaving the M2 at J1A Nelson Street A12 Westlink towards York Street A2 Sydenham By Pass towards Dee Street (Bangor bound) Boucher Road towards Broadway Dunbar Link towards York Street Co Antrim - Newtownabbey / Carrickfergus - the main A2 Shore Road has a lane restriction in place in both directions at the Station Road Greenisland - while engineers undertake repairs to a gas pipeline.
+                        </p>
+                        <hr>
                         <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Traffic News Summary <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
                         <p>
                         In Greater Belfast traffic is busy on the following routes:-

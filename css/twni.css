@@ -33,6 +33,9 @@ body {
     #marketing_override p {
         font-size: 20px;
     }
+    .container {
+        max-width: 90vw;
+    }
 }
 
 .traffic-news {
