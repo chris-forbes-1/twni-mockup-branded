@@ -66,6 +66,9 @@ body {
 .map-key {
     font-size: 14px;
     background-color: #eeeeee;
+    padding-top: 10px;
+    border: 1px solid #aba9a9;
+    border-radius: 5px;
 }
 
 #toTop {
