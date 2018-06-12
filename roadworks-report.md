@@ -12,14 +12,24 @@ permalink: roadworks-report
         $('#tabs a[href="#roadmap"]').tab('show');
     }
 </script>
-<div class="container-fluid traffic-news">
-    <div class="col-md-12">
+
+<style>
+    .nav-tabs .nav-link {
+        color: #000 !important;
+    }
+    .nav > li {
+        color: #000 !important;
+        background-color:#cdcfd1 !important;        
+    }
+</style>
+<div class="container-fluid traffic-news" style="padding-left:0px !important; padding-right:0px !important; background-color:#dee2e6">
+    <div class="col-md-12" style="padding-left:1px !important; padding-right:0px !important; border-left-width: 1px;">
         <div class="bd-example bd-example-tabs">
             <ul class="nav nav-tabs" id="tabs" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active show" id="roadworks-tab" data-toggle="tab" href="#data" role="tab" aria-controls="roadworks-report" aria-selected="true">Roadworks Report</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="border-color:white">
                   <a class="nav-link show" id="roadworks-map" data-toggle="tab" href="#roadmap" role="tab" aria-controls="news-latest" aria-selected="true">Map View</a>
                 </li>                
             </ul>
@@ -34,8 +44,6 @@ permalink: roadworks-report
                         <div class="portlet-borderless-container" style="">
                             <div class="portlet-body">
                                 <div class="journal-content-article">
-                                    <h1>Roadworks Report</h1>
-                                    <p>Keep up to date with current and forthcoming road maintenance using our roadworks report. Select the road type and timespan from the dropdown menus and click submit to view the latest roadworks.</p>
                                 </div>
                                 <div class="entry-links"> </div>
                             </div>
@@ -43,7 +51,7 @@ permalink: roadworks-report
                     </div>
                     <div class="portlet-boundary portlet-boundary_roadwork_WAR_twniportlet_ portlet-static portlet-static-end portlet-borderless " id="p_p_id_roadwork_WAR_twniportlet_INSTANCE_ujAY15YX2VV6_"> <span id="p_roadwork_WAR_twniportlet_INSTANCE_ujAY15YX2VV6"></span>
                         <div class="portlet-borderless-container" style="">
-                            <div class="portlet-body">
+                            <div class="portlet-body" style="padding-left:10px">
                                 <div class="searchRoadworkForm">
                                     <form id="searchRoadworkForm">
                                         <fieldset>
@@ -466,7 +474,7 @@ permalink: roadworks-report
 </div>
                 </div>
                 <div class="tab-pane " id="roadmap">
-                    <img src="images/roadwork_map_example.png" style="max-width:100%"/>
+                    <img src="images/roadwork_map_example.png" style="max-width:100%;min-width:100%; min-height:100%; max-height:100%"/>
                 </div>
             </div>
         </div>
