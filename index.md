@@ -16,91 +16,162 @@ permalink: index
     The site provides traffic news, images and live feeds from traffic cameras and information on current and future roadworks.
 </p>
 -->
-
+<div class="row">
+    <div class="alert alert-danger fas fa-exclamation" role="alert" style="min-width:100%; text-align:center">
+        Storm Ophelia is due to hit the west coast by 17:00 tonight, please visit our emergency news page for more information
+    </div>
+</div>
 <div class="container-fluid traffic-news"> 
+    <script type="text/javascript">
+        function replaceMap(element)
+        {
+            let src="images/example_map.png";
+            if(element ==='event')
+            {
+                src='images/map_event_example.png';
+            }
+            else
+            {
+                src='images/incident_example.png';
+            }
+            document.getElementById('mainMap').src=src;
+        }
+    </script>
     <div class="row">
         <div class="col-md-4">
-            <h2>Traffic News</h2>
+            <br/>
           <div class="bd-example bd-example-tabs">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active show" id="news-latest-tab" data-toggle="tab" href="#news-latest" role="tab" aria-controls="news-latest" aria-selected="true">Latest</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="news-general-tab" data-toggle="tab" href="#news-general" role="tab" aria-controls="news-general" aria-selected="false">General</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="news-emergency-tab" data-toggle="tab" href="#news-emergency" role="tab" aria-controls="news-emergency" aria-selected="false">Emergency</a>
+                  <a class="nav-link active show" id="news-latest-tab" data-toggle="tab" href="#news-latest" role="tab" aria-controls="news-latest" aria-selected="true">Traffic News</a>
                 </li>
             </ul>
             <div class="tab-content" id="newsTabContent" style="min-height: 63vh; max-height:63vh; overflow-y:scroll;">
                 <!-- LATEST -->
                 <div class="tab-pane fade active show" id="news-latest" role="tabpanel" aria-labelledby="news-latest-tab">
-                    <p> &nbsp;
-                        <h4><a href="index2"><img src="images/map/incident-high.png"> Major Incident - M1 Closed Junction 10 <small class="text-muted">29/03/2018 13:59:33</small></a></h4>
-                        <hr>                        
-                        <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Traffic News Summary <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
-                        <p>
-                        In Greater Belfast traffic is busy on the following routes:-
-                        </p>
-                        <p>
-                        M1 countrybound J2 - J3
-                        leaving the M2 at J1A Nelson Street A12 Westlink towards York Street A2 Sydenham By Pass towards Dee Street (Bangor bound) Boucher Road towards Broadway Dunbar Link towards York Street Co Antrim - Newtownabbey / Carrickfergus - the main A2 Shore Road has a lane restriction in place in both directions at the Station Road Greenisland - while engineers undertake repairs to a gas pipeline.
-                        </p>
-                        <hr>
-                        <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Traffic News Summary <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
-                        <p>
-                        In Greater Belfast traffic is busy on the following routes:-
-                        </p>
-                        <p>
-                        M1 countrybound J2 - J3
-                        leaving the M2 at J1A Nelson Street A12 Westlink towards York Street A2 Sydenham By Pass towards Dee Street (Bangor bound) Boucher Road towards Broadway Dunbar Link towards York Street Co Antrim - Newtownabbey / Carrickfergus - the main A2 Shore Road has a lane restriction in place in both directions at the Station Road Greenisland - while engineers undertake repairs to a gas pipeline.
-                        </p>
-                        <hr>
-                        <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Traffic News Summary <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
-                        <p>
-                        In Greater Belfast traffic is busy on the following routes:-
-                        </p>
-                        <p>
-                        M1 countrybound J2 - J3
-                        leaving the M2 at J1A Nelson Street A12 Westlink towards York Street A2 Sydenham By Pass towards Dee Street (Bangor bound) Boucher Road towards Broadway Dunbar Link towards York Street Co Antrim - Newtownabbey / Carrickfergus - the main A2 Shore Road has a lane restriction in place in both directions at the Station Road Greenisland - while engineers undertake repairs to a gas pipeline.
-                        </p>
-                    </p>
-                </div>
-                <!-- GENERAL -->
-                <div class="tab-pane fade" id="news-general" role="tabpanel" aria-labelledby="news-general-tab">
-                          <p> General News
-                          {% include traffic-news-links-inc.html %}
-                    </p>
-                </div>
-                <!-- EMERGENCY -->
-                <div class="tab-pane fade" id="news-emergency" role="tabpanel" aria-labelledby="news-emergency-tab">
-                
-                    <p> Winter and Emergency News </p>
-                    <h4><a href="traffic-news#newsItem_1"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i> Emergency Traffic News <small class="text-muted">05/04/2018 16:57:15</small></a></h4>
-                    <p>
-                    Nothing to report
-                    </p>
-                    
+                   <br/>
+                   <hr>
+                   <h1 class="header">Current incidents</h1>
+                   <hr>
+                   <div id="accordion">
+                     <div class="card">
+                       <div class="card-header" id="headingOne">
+                         <h5 class="mb-0">
+                            <button class="btn btn-link collapsed col-12 d-flex align-items-left" style="text-align:left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h3 style="color: #7f2131;font-weight: 400;" class="d-inline col-10"><img src="images/map/incident-high.png">&nbsp;Broken down lorry M2</h3>
+                                <span class="col-2 fas fa-chevron-right" style="font-size: 25px;">
+                                </span>
+                            </button>
+                         </h5>
+                       </div>
+                       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                         <div class="card-body">
+                           A broken down lorry on the M2 northbound midway between J2 Greencastle and J4 Sandyknowes has been moved to the harshoulder
+                                                      <br/><br/>
+                                                      <button class="btn btn-info" name="incident" onclick="replaceMap('incident')">View On map </button>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="card">
+                       <div class="card-header" id="headingTwo">
+                         <h5 class="mb-0">
+                           <button class="btn btn-link collapsed col-12 d-flex align-items-center" style="text-align:left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h3 style="color: #7f2131;font-weight: 400;" class="d-inline col-10"><img src="images/map/incident-high.png">&nbsp;Traffic collision Ballymena</h3>
+                                <span class="col-2 fas fa-chevron-right" style="font-size: 25px;">
+                                </span>
+                           </button>
+                         </h5>
+                       </div>
+                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                         <div class="card-body">
+                           The Old Cullybackey Road, Ballymena, has reopened following an earlier traffic collision
+                           <br/><br/>
+                           <button class="btn btn-info" name="incident" onclick="replaceMap('incident')">View On map </button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <hr>
+                   <h1 class="header">&nbsp;Travel News</h1>
+                   <hr>
+                    <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                             <button class="btn btn-link collapsed col-12 d-flex align-items-center" data-toggle="collapse" style="text-align:left" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 <h3 style="color: #7f2131;font-weight: 400;" class="d-inline col-10"><i class="fas fa-exclamation-triangle icon-warn-triangle"></i>&nbsp;Traffic News Summary</h3>
+                                 <span class="col-2 fas fa-chevron-right" style=" font-size: 25px;">
+                                 </span>
+                             </button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                              <p>
+                                  In Greater Belfast traffic is busy on the following routes:-
+                              </p>
+                              <p>
+                                  <dl>
+                                      <dt>M1 countrybound J2 - J3</dt>
+                                      <dd>leaving the M2 at J1A Nelson Street A12 Westlink towards York Street A2 Sydenham By Pass towards Dee Street (Bangor bound) Boucher Road towards Broadway Dunbar Link towards York Street Co Antrim</dd> 
+                                      <dt>Newtownabbey / Carrickfergus </dt> 
+                                      <dd>the main A2 Shore Road has a lane restriction in place in both directions at the Station Road Greenisland - while engineers undertake repairs to a gas pipeline.</dd>
+                                   </dl>
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <hr>
-                    
-                    <h4><a href="traffic-news#newsItem_2"><i class="fas fa-snowflake icon-winter"></i> Some winter news <small class="text-muted">29/03/2018 13:59:33</small></a></h4>
-                    <p>
-                    East Belfast: Montrose Street, off the Albertbridge Road remains closed after the collpase of a derelict building. 
-                    </p><p>
-                    The items below refer to locations that are still affected by the August 2017 flooding event.
-                    </p><p>
-                    Co Londonderry Roads Closed
-                    </p><p>
-                    B49 Church Street Claudy – Collapsed bridge
-                    U1180 Glenrandal Rd, Park – Collapsed bridge
-                    Co Tyrone Roads Closed
-                    </p><p>
-                    C624 Camlough Road, Creggan
-                    U1232 McConnell’s Branch Road off Gorticashel Rd, Glehull,Omagh
-                    In the event of flooding, if anyone is in need of rescue dial 999 otherwise telephone the Flooding Incident Line on 0300 2000 100. The Flooding Incident Line provides a single point of contact to report when property is flooded or flooding.
-                    </p>
-
+                    <h1 class="header">&nbsp;Current Events</h1>
+                    <hr>
+                    <div id="accordion">
+                     <div class="card">
+                       <div class="card-header" id="headingFour">
+                         <h5 class="mb-0">
+                            <button class="btn btn-link collapsed col-12 d-flex align-items-center" style="text-align:left" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h3 style="color: #7f2131;font-weight: 400;" class="d-inline col-10"><img src="images/map/event-med.png">&nbsp;Annual Parade</h3>
+                                <span class="col-2 fas fa-chevron-right" style="font-size: 25px;">
+                                </span>
+                            </button>
+                         </h5>
+                       </div>
+                       <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                         <div class="card-body">
+                           Annual parade due to pass through 
+                           <dl>
+                                <dt>University Rd</dt>
+                                <dd>09:00 - 09:30</dd>
+                                <dt>Lisburn Rd</dt>
+                                <dd>09:30 - 10:30</dd>
+                                <dt>Cranmore Park</dt>
+                                <dd>10:30 - 11:00</dd>
+                           <br/><br/>
+                           <button class="btn btn-info" name="incident" onclick="replaceMap('event')">View On map </button>
+                           </dl>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="card">
+                       <div class="card-header" id="headingFive">
+                         <h5 class="mb-0">
+                           <button class="btn btn-link collapsed col-12 d-flex align-items-center" style="text-align:left" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h3 style="color: #7f2131;font-weight: 400;" class="d-inline col-md-10"><img src="images/map/event-med.png">&nbsp;Another Example Event</h3>
+                                <span class="col-2 fas fa-chevron-right" style=" font-size: 25px;">
+                                </span>
+                           </button>
+                         </h5>
+                       </div>
+                       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                         <div class="card-body">
+                           The Old Cullybackey Road, Ballymena, has reopened following an earlier traffic collision
+                           <br/><br/>
+                           <button class="btn btn-info" name="incident" onclick="replaceMap('event')">View On map </button>                           
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <hr>               
                 </div>
             </div>
           </div>
