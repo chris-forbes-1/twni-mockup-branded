@@ -14,12 +14,16 @@ permalink: roadworks-report
 </script>
 
 <style>
+
+.active {
+    color:#000 !important;
+}
     .nav-tabs .nav-link {
-        color: #000 !important;
+        color: ##bfbfbf !important;
     }
     .nav > li {
-        color: #000 !important;
-        background-color:#cdcfd1 !important;        
+        color: #fff !important;
+        background-color:#a6737c !important;        
     }
 </style>
 <div class="container-fluid traffic-news" style="padding-left:0px !important; padding-right:0px !important; background-color:#dee2e6">
