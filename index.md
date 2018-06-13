@@ -188,6 +188,6 @@ permalink: index
 <br>
 
 <p class="text-center">
-    The information on this website is provided by Transport NI of the Department for Infrastructure in Northern Ireland. Transport NI is the sole roads authority for all public roads in Northern Ireland. <br>
+    The information on this website is provided by DfI (Department for Infrastructure) Roads. DfI Roads is the sole roads authority responsible for all public roads, footways, bridges and street lights in Northern Ireland. <br>
 </p>
 
