@@ -17,7 +17,7 @@ permalink: index
 </p>
 -->
 <div class="row">
-    <div class="alert alert-danger fas fa-exclamation" role="alert" style="min-width:100%; text-align:center">
+    <div class="alert alert-danger fas fa-exclamation" role="alert" style="min-width:100%; background-color:#e21d0b; color:white; text-align:center">
         Storm Ophelia is due to hit the west coast by 17:00 tonight, please visit our emergency news page for more information
     </div>
 </div>
